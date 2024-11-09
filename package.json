@@ -18,5 +18,9 @@
 	"bugs": {
 		"url": "https://github.com/myshy13/myshy13/issues"
 	},
-	"homepage": "https://github.com/myshy13/myshy13#readme"
+	"homepage": "https://github.com/myshy13/myshy13#readme",
+	"dependencies": {
+		"express": "^4.21.1",
+		"fs": "^0.0.1-security"
+	}
 }

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const { exec } = require("child_process");
-
+const fs = require("fs");
 const textToImage = require("text-to-image");
 
 const options = {
@@ -26,8 +26,10 @@ function dayOfTheWeek() {
 
 // Generate an image
 textToImage.generate("the day is " + dayOfTheWeek(), options).then(function (dataUrl) {
-	exec("rm ./README.md");
-	exec("touch README.md");
-	exec(`echo "# myshy13\n" >> ./README.md`);
-	exec(`echo "![""](${dataUrl})" >> ./README.md`);
+	console.log(dataUrl);
+	const base64Data = dataUrl.split(",")[1];
+	const buffer = Buffer.from(base64Data, "base64");
+	const fs = require("fs");
+	const filePath = "./image.png";
+	fs.writeFileSync(filePath, buffer);
 });
