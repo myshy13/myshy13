@@ -1,0 +1,22 @@
+{
+	"name": "myshy13",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "node index.js"
+	},
+	"bin": {
+		"updategithub": "./index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/myshy13/myshy13.git"
+	},
+	"author": "Hamish M",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/myshy13/myshy13/issues"
+	},
+	"homepage": "https://github.com/myshy13/myshy13#readme"
+}
