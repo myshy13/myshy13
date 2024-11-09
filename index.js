@@ -10,7 +10,7 @@ const options = {
 	fontSize: 48,
 	fontColor: "#0000FF",
 	maxWidth: 600,
-	padding: 20,
+	padding: 21,
 	align: "center",
 	verticalAlign: "middle",
 	textAlign: "center",
