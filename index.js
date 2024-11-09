@@ -29,5 +29,5 @@ textToImage.generate("the day is " + dayOfTheWeek(), options).then(function (dat
 	exec("rm ./README.md");
 	exec("touch README.md");
 	exec(`echo "# myshy13\n" >> ./README.md`);
-	exec(`echo "!["image"](${dataUrl})" >> ./README.md`);
+	exec(`echo "![${dayOfTheWeek}](${dataUrl})" >> ./README.md`);
 });
