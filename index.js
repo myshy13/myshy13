@@ -33,3 +33,7 @@ textToImage.generate("the day is " + dayOfTheWeek(), options).then(function (dat
 	const filePath = "./image.png";
 	fs.writeFileSync(filePath, buffer);
 });
+
+exec("git add ./image.png");
+exec("git commit -m update to image");
+exec("git push");
